@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/genex.css"/>
+    <link rel="stylesheet" href="../css/all.css"/>
+</head>
+<body>
+    <div class="container2">
+        <h1>Responsive Registeration form</h1>
+        <form action="login.html" class="form" id="myform"name="myform" method="get" onsubmit="return validate()">
+            <div class="registerform" >
+                <i class="fa fa-envelope icon" style="margin-left: auto; font-size: 20px;"></i>
+                <input id="Email" autocomplete="off" type="text" placeholder="Email" name="email" required><span class="formError"></span>
+            </div>
+            <div class="registerform" >
+                <i class="fa-sharp fa-solid fa-lock  icon"></i>
+                <input id="Password" autocomplete="off" type="password" placeholder="Password" name="pass" required ><span class="formError"></span>
+            </div>
+            <div class="registerform" >
+                <i class="fa-sharp fa-solid fa-lock  icon"></i>
+                <input  id="Re-Password"autocomplete="off" type="password" placeholder="Re-Password" name="Rpass"required><span class="formError"></span>
+            </div>
+            <div class="column">
+            <div class="registerform" >
+                <i class="fa-solid fa-user  icon"></i>
+                <input id="firstname" autocomplete ="off" type="text" placeholder="Firstname" name="Fname" required><span class="formError"></span>
+            </div>
+            <div class="registerform" >
+                <i class="fa-solid fa-user  icon"></i>
+                <input id="lasttname" type="text" placeholder="Lastname" name="Lname" required ><span class="formError"></span>
+            </div>
+            </div>
+            <div class="gender-option" name="gender" >
+                <div class="gender" id="gender" >
+                <input  type="radio" id="male"name="gender" >
+                <label for="check-male" name="male">Male</label>
+                </div>
+                <div class="gender" id="gender">
+                <input type="radio" id="female" name="gender" >
+                <label for="check-female" name="Female">Female</label>
+            </div>
+            </div>
+            <div class="column">
+                <div class="select-box">
+                  <select name="country" >
+                    <option  value="select country">Select Country </option>
+                    <option>America</option>
+                    <option>Japan</option>
+                    <option>India</option>
+                    <option>Nepal</option>
+                  </select>
+                </div>
+            </div>
+            <div class="check" id="condition">
+                <input type="checkbox" name="check" required >
+                <label>I agree with term n condition</label>
+            </div>
+            <div class="check">
+                <input type="checkbox" name="check" required>
+                <label>I want to receive newslatter</label>
+            </div>
+               
+            <button class="button1" type="submit" value="Register">Register</button>
+            
+        </form>
+   </div>
+</body>
+<script src="../JS/genex.js"></script>
+
+</html>
