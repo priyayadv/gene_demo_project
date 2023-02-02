@@ -1,4 +1,5 @@
 
+ function validate(){
 
     var email=document.getElementById("Email").value;
     var password=document.getElementById("Password").value;
@@ -10,7 +11,6 @@ var country=document.myform.country;
 var check=document.myform.check;
   localStorage.setItem('usermail',email);
  localStorage.setItem('userpassword',password);
- function validate(){
 var users=[]
   let user={
     email:Email,
@@ -22,7 +22,6 @@ localStorage.setItem(email,JSON.stringify(user));
 localStorage.setItem(password,JSON.stringify(user));
 
 let array=JSON.parse(localStorage.getItem(email));
-console.log(array)
 let array1=JSON.parse(localStorage.getItem(password));
 
 if(email.value.length<=0){
